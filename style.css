@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700|Montserrat+Alternates&display=swap&subset=cyrillic-ext');
+
+.nav-item a{
+    font-family: Comfortaa;
+    font-weight: 700;    
+}
+
+.padding{
+    padding: 10px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.detal{
+    background-color: #fff59d;
+    font-family: Comfortaa;
+   /* font-weight: 700; */
+}
+
+footer{
+    background-color: #bcaaa4;
+    padding-top: 20px;
+    /*font-family: Comfortaa;*/
+    font-size: 20px;
+    font-family: MontserratAlternates;
+    font-weight: 500; 
+}
+
+.cards{
+    background-color: #fff8e1;
+}
+
+.cards h1{
+    font-family: MontserratAlternates;
+    /*font-family: Comfortaa;*/
+    font-weight: 500;   
+}
+
+.navbar{
+    background-color: #e8eaf6;    
+}
+
+.card{
+    border: 1px solid #e5e5e5;
+}
+
+.navbar-brand{
+    font-family: Comfortaa;
+    font-weight: 700;   
+}
+
+.card-title{
+    font-family: MontserratAlternates;
+    font-size: 18px;
+}
+
+.modal-body img{
+    float: left;
+}
+
+.modal-title{
+    font-family: MontserratAlternates;
+    font-size: 25px;
+}
