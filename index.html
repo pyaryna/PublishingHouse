@@ -6,6 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="main.css">
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,7 +24,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top padding">  <!--navbar-light  bg-light-->
       <div class="container">
         <a href="#" class="navbar-brand">PAIS</a>
         <button
@@ -56,24 +58,77 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row alert text-center">
+    <div class="container-fluid padding cards">
+      <div class="row alert centered">
         <div class="col-12">
-          <h1 class="display-4">Купуйте видання видавницта "ПАІС"</h1>
+          <h1 class="display-4">Купуйте видання видавництва "ПАІС"</h1>
         </div>
-        <hr />
+        <hr/>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+    <div class="container ">
+      <div class="row padding">
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+          <div class="card-header">
+              <img src="images/2011Enciklopedia_.png" class="card-img-top" />
+          </div>            
+            <div class="card-body">
+              <h4 class="card-title">ЕНЦИКЛОПЕДІЯ АФОРИЗМІВ, КРИЛАТИХ ФРАЗ, ЦИТАТ</h4>
+              <p class="card-text">280 грн.</p>
+              <button
+                class="btn detal"
+                data-toggle="modal"
+                data-target="#firstbook"
+              >
+                Детальніше
+              </button>
+              <div id="firstbook" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-mg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">ЕНЦИКЛОПЕДІЯ АФОРИЗМІВ, КРИЛАТИХ ФРАЗ, ЦИТАТ</h4>
+                      <button class="close" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/2011Enciklopedia_.png" class="padding"/>
+                        <p>Автор: А. О. Капелюшний <br>
+                            Рік видання: 2011 <br> 
+                            Формат: 60х84/8 <br>
+                            Палітурка: тверда <br>
+                            Обсяг: 960 с.</p>
+                          <p>
+                              Дана книга – унікальне в поліграфії видання – 
+                                є підсумком копіткої багаторічної праці, започаткованої 
+                                ще наприкінці 60-х років минулого століття. Книга, яка, власне, 
+                                успішно витримала вже два видання у 2004 і 2008 роках, узагальнює і 
+                                суттєво розширює «досвід» попередниць у кількості процитованих висловів, 
+                                представлених авторів та «навігації» тематичного, алфавітного і географічного 
+                                покажчиків. Всього у пропонованій Енциклопедії зібрано понад 19 200 афоризмів, 
+                                крилатих фраз, цитат і висловів 3 300 авторів – про природу творчості, про майстерність 
+                                журналіста, про ЗМІ та свободу слова, про зв’язки журналістики з іншими сферами буття тощо.                       
+                              
+                          </p>
+                          <p class="padding">Код ISBN: 978-966-1585-66-8 <br>
+                          Ціна: 280,00 грн</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 padding">
+          <div class="card">
+              <div class="card-header">
+                  <img src="images/Gavel_.png" class="card-img-top" />
+              </div>               
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -95,14 +150,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+              <div class="card-header">
+                  <img src="images/zdorovega_.png" class="card-img-top" />
+              </div>   
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -124,14 +181,142 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 padding">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/Dmytrovsky_.png" class="card-img-top" />
+                </div>                 
+              <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+                <button
+                  class="btn detal"
+                  data-toggle="modal"
+                  data-target="#firstbook"
+                >
+                  Детальніше
+                </button>
+                <div id="firstbook" class="modal fade" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Книжка</h4>
+                        <button class="close" data-dismiss="modal">x</button>
+                      </div>
+                      <div class="modal-body">
+                        якийсь текст
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+              <div class="card-header">
+                  <img src="images/Kapeluh_zmi_.png" class="card-img-top" />
+              </div>   
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
+                class="btn detal"
+                data-toggle="modal"
+                data-target="#firstbook"
+              >
+                Детальніше
+              </button>
+              <div id="firstbook" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Книжка</h4>
+                      <button class="close" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                      якийсь текст
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 padding">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/zacnyj_.png" class="card-img-top" />
+                </div>   
+              <div class="card-body">
+                <h4 class="card-title"></h4>
+                <p class="card-text"></p>
+                <button
+                  class="btn detal"
+                  data-toggle="modal"
+                  data-target="#firstbook"
+                >
+                  Детальніше
+                </button>
+                <div id="firstbook" class="modal fade" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Книжка</h4>
+                        <button class="close" data-dismiss="modal">x</button>
+                      </div>
+                      <div class="modal-body">
+                        якийсь текст
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-3 padding">
+          <div class="card">
+              <div class="card-header">
+                  <img src="images/Shurhalo_2_.png" class="card-img-top" />
+              </div>   
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+              <button
+                class="btn detal"
+                data-toggle="modal"
+                data-target="#firstbook"
+              >
+                Детальніше
+              </button>
+              <div id="firstbook" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Книжка</h4>
+                      <button class="close" data-dismiss="modal">x</button>
+                    </div>
+                    <div class="modal-body">
+                      якийсь текст
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 padding">
+          <div class="card">
+              <div class="card-header">
+                  <img src="images/Shurhalo_.png" class="card-img-top" />
+              </div>   
+            <div class="card-body">
+              <h4 class="card-title"></h4>
+              <p class="card-text"></p>
+              <button
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -154,15 +339,48 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row padding">
+          <div class="col-md-3 padding">
+              <div class="card">
+                  <div class="card-header">
+                      <img src="images/GreateBritain_.png" class="card-img-top" />
+                  </div>   
+                <div class="card-body">
+                  <h4 class="card-title"></h4>
+                  <p class="card-text"></p>
+                  <button
+                    class="btn detal"
+                    data-toggle="modal"
+                    data-target="#firstbook"
+                  >
+                    Детальніше
+                  </button>
+                  <div id="firstbook" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Книжка</h4>
+                          <button class="close" data-dismiss="modal">x</button>
+                        </div>
+                        <div class="modal-body">
+                          якийсь текст
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+              <div class="card-header">
+                  <img src="images/Lubkovich_.png" class="card-img-top" />
+              </div>   
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -184,14 +402,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+              <div class="card-header">
+                  <img src="images/Lubkovich_com_.png" class="card-img-top" />
+              </div>   
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -213,103 +433,16 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 padding">
           <div class="card">
-            <img src="" class="card-img-top" />
+              <div class="card-header">
+                  <img src="images/potjatynyk_.png" class="card-img-top" />
+              </div>   
             <div class="card-body">
               <h4 class="card-title"></h4>
               <p class="card-text"></p>
               <button
-                class="btn btn-info"
-                data-toggle="modal"
-                data-target="#firstbook"
-              >
-                Детальніше
-              </button>
-              <div id="firstbook" class="modal fade" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Книжка</h4>
-                      <button class="close" data-dismiss="modal">x</button>
-                    </div>
-                    <div class="modal-body">
-                      якийсь текст
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
-              <button
-                class="btn btn-info"
-                data-toggle="modal"
-                data-target="#firstbook"
-              >
-                Детальніше
-              </button>
-              <div id="firstbook" class="modal fade" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Книжка</h4>
-                      <button class="close" data-dismiss="modal">x</button>
-                    </div>
-                    <div class="modal-body">
-                      якийсь текст
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
-              <button
-                class="btn btn-info"
-                data-toggle="modal"
-                data-target="#firstbook"
-              >
-                Детальніше
-              </button>
-              <div id="firstbook" class="modal fade" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title">Книжка</h4>
-                      <button class="close" data-dismiss="modal">x</button>
-                    </div>
-                    <div class="modal-body">
-                      якийсь текст
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
-              <button
-                class="btn btn-info"
+                class="btn detal"
                 data-toggle="modal"
                 data-target="#firstbook"
               >
@@ -334,7 +467,7 @@
       </div>
     </div>
 
-    <footer class="container-fluid">
+    <footer class="container-fluid padding centered">
       <div class="container">
         <p>&copy Видавництво "ПАІС", 2019</p>
       </div>
