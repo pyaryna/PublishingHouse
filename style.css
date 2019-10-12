@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700|Montserrat+Alternates&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.fas{
+    padding: 0.1rem;
+}
 
 .nav-item a{
-    font-family: Comfortaa;
+    /*font-family: Comfortaa;*/
+    font-family: Montserrat;
     font-weight: 700;    
+    font-size: 1.1rem;
+}
+
+.navbar{    
+    background: none !important;
+    background-color: #bcaaa4;
+}
+
+.navbar p{
+    margin-top: 0.7rem !important;
+    font-size: 18px !important;
+}
+
+@media all and (max-width: 1000px) {
+    .navbar p{
+        display: none;
+    }
 }
 
 .padding{
@@ -15,15 +38,17 @@
 
 .detal{
     background-color: #fff59d;
-    font-family: Comfortaa;
+    /*font-family: Comfortaa;*/
+    font-family: Montserrat;
    /* font-weight: 700; */
+   position: relative;
 }
 
 footer{
     background-color: #bcaaa4;
     padding-top: 20px;
     /*font-family: Comfortaa;*/
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: MontserratAlternates;
     font-weight: 500; 
 }
@@ -33,9 +58,9 @@ footer{
 }
 
 .cards h1{
-    font-family: MontserratAlternates;
+    font-family: Roboto;
     /*font-family: Comfortaa;*/
-    font-weight: 500;   
+    font-weight: 400;   
 }
 
 .navbar{
@@ -44,6 +69,8 @@ footer{
 
 .card{
     border: 1px solid #e5e5e5;
+    word-wrap: unset !important;
+    /*height: 475px;*/
 }
 
 .navbar-brand{
@@ -51,9 +78,20 @@ footer{
     font-weight: 700;   
 }
 
+.navbar-brand img{
+    width: 150px;
+}
+
 .card-title{
     font-family: MontserratAlternates;
-    font-size: 18px;
+    font-size: 1.1rem;
+    height: 4rem;
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+    .card-title{
+        height: 8rem;
+    }
 }
 
 .modal-body img{
@@ -62,5 +100,5 @@ footer{
 
 .modal-title{
     font-family: MontserratAlternates;
-    font-size: 25px;
+    font-size: 1.6rem;
 }
