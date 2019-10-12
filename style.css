@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700|Montserrat+Alternates&display=swap&subset=cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-.fas{
-    padding: 0.1rem;
-}
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700|Montserrat+Alternates&display=swap&subset=cyrillic-ext|https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .nav-item a{
-    /*font-family: Comfortaa;*/
     font-family: Montserrat;
     font-weight: 700;    
     font-size: 1.1rem;
@@ -28,6 +22,15 @@
     }
 }
 
+.navbar-brand{
+    font-family: Comfortaa;
+    font-weight: 700;   
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
 .padding{
     padding: 10px;
 }
@@ -44,13 +47,8 @@
    position: relative;
 }
 
-footer{
-    background-color: #bcaaa4;
-    padding-top: 20px;
-    /*font-family: Comfortaa;*/
-    font-size: 1.3rem;
-    font-family: MontserratAlternates;
-    font-weight: 500; 
+.fa-envelope{
+    padding: 0.1rem;
 }
 
 .cards{
@@ -59,27 +57,13 @@ footer{
 
 .cards h1{
     font-family: Roboto;
-    /*font-family: Comfortaa;*/
     font-weight: 400;   
-}
-
-.navbar{
-    background-color: #e8eaf6;    
 }
 
 .card{
     border: 1px solid #e5e5e5;
     word-wrap: unset !important;
-    /*height: 475px;*/
-}
 
-.navbar-brand{
-    font-family: Comfortaa;
-    font-weight: 700;   
-}
-
-.navbar-brand img{
-    width: 150px;
 }
 
 .card-title{
@@ -101,4 +85,13 @@ footer{
 .modal-title{
     font-family: MontserratAlternates;
     font-size: 1.6rem;
+}
+
+
+footer{
+    background-color: #bcaaa4;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-family: MontserratAlternates;
+    font-weight: 500; 
 }
