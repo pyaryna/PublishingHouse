@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700|Montserrat+Alternates&display=swap&subset=cyrillic-ext|https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Montserrat+Alternates:400,600,700|Montserrat:400,600,700&display=swap');
 
 .nav-item a{
     font-family: Montserrat;
-    font-weight: 700;    
+    font-weight: 600;    
     font-size: 1.1rem;
 }
 
 .navbar{    
     background: none !important;
-    background-color: #bcaaa4;
+    background-color: #bcaaa4; 
 }
 
 .navbar p{
@@ -22,10 +22,10 @@
     }
 }
 
-.navbar-brand{
+/*.navbar-brand{
     font-family: Comfortaa;
     font-weight: 700;   
-}
+}*/
 
 .navbar-brand img{
     width: 150px;
@@ -41,10 +41,16 @@
 
 .detal{
     background-color: #fff59d;
-    /*font-family: Comfortaa;*/
     font-family: Montserrat;
-   /* font-weight: 700; */
-   position: relative;
+    position: relative;
+}
+
+.service{
+    background-color: #fff59d;
+    font-family: Montserrat;  
+    width: 8rem;
+    height: 3rem;
+    color: #555555;;
 }
 
 .fa-envelope{
@@ -87,6 +93,14 @@
     font-size: 1.6rem;
 }
 
+.carousel-indicators li {
+    border: 0.2rem solid #fff59d;
+    border-radius: 10px;
+  }
+  
+.carousel-indicators .active {
+    border: 0.2rem solid #0000ff;
+ }
 
 footer{
     background-color: #bcaaa4;
@@ -94,4 +108,44 @@ footer{
     font-size: 1.3rem;
     font-family: MontserratAlternates;
     font-weight: 500; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#info p{
+    text-indent: 2rem;
+    font-family: Montserrat;
+    padding: 0.3rem;
+    text-align: justify;
+    font-size: 1.15rem;
+}
+
+#info ul li{    
+    font-family: Montserrat;
+    padding: 0.3rem;
+    font-size: 1.15rem;
+}
+
+.centeredinfo{
+    font-family: Montserrat;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.carousel-item{
+    width:100%;
 }
