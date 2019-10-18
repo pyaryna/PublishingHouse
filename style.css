@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Montserrat+Alternates:400,600,700|Montserrat:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Montserrat+Alternates:400,600,700|Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap&subset=cyrillic-ext');
+
+.navigation{
+    background-color:#fff3e0;
+}
 
 .nav-item a{
     font-family: Montserrat;
@@ -8,7 +13,6 @@
 
 .navbar{    
     background: none !important;
-    background-color: #bcaaa4; 
 }
 
 .navbar p{
@@ -21,11 +25,6 @@
         display: none;
     }
 }
-
-/*.navbar-brand{
-    font-family: Comfortaa;
-    font-weight: 700;   
-}*/
 
 .navbar-brand img{
     width: 150px;
@@ -40,30 +39,38 @@
 }
 
 .detal{
-    background-color: #fff59d;
+    background-color: #e3f2fd;
     font-family: Montserrat;
     position: relative;
+    padding: 0rem;
 }
 
 .service{
-    background-color: #fff59d;
+    background-color: #c8e6c9;
     font-family: Montserrat;  
     width: 8rem;
     height: 3rem;
-    color: #555555;;
+    color: #555555;
+}
+
+@media all and (max-width: 800px) {
+    .service{
+        width: 8rem;
+        height: 3rem;
+    }
 }
 
 .fa-envelope{
-    padding: 0.1rem;
+    padding: 0.2rem;
+    float: left;
 }
 
-.cards{
-    background-color: #fff8e1;
+.page-title{
+    background-color: #fafafa;
 }
 
-.cards h1{
-    font-family: Roboto;
-    font-weight: 400;   
+.page-title h1{
+    font-family: Philosopher;      
 }
 
 .card{
@@ -103,11 +110,14 @@
  }
 
 footer{
-    background-color: #bcaaa4;
+    /*background-color:#ff8a65/* #bcaaa4*/
+
+    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
     padding-top: 20px;
     font-size: 1.3rem;
     font-family: MontserratAlternates;
     font-weight: 500; 
+    color:#ffffff;
 }
 
 
@@ -124,15 +134,14 @@ footer{
 
 
 
-#info p{
+.info p{
     text-indent: 2rem;
     font-family: Montserrat;
-    padding: 0.3rem;
     text-align: justify;
     font-size: 1.15rem;
 }
 
-#info ul li{    
+.info ul li{    
     font-family: Montserrat;
     padding: 0.3rem;
     font-size: 1.15rem;
@@ -142,10 +151,130 @@ footer{
     font-family: Montserrat;
     padding: 0.3rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 
-.carousel-item{
-    width:100%;
+.fa-palette{
+    color: #ff5050;
+    font-size: 0.8rem;
+}
+
+.fa-book-open{
+    color:#ff5050;
+    font-size: 0.8rem;
+}
+
+.fa-bookmark{
+    color:#ff5050;
+    font-size: 0.8rem;
+}
+
+.fa-facebook-square{
+    padding: 0.2rem;
+    color: #000000;
+}
+
+
+
+.contacts{
+    background-color: #fff3e0;
+    font-family: Montserrat;
+    padding: 0.3rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contacts h2{
+    font-weight: 500;
+}
+
+.imgs{
+    float: right;
+    margin-left: 1rem;
+}
+
+header{
+    /*background-color: #ffebee;*/
+   /* background-color: #ff8f00; */
+   background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
+
+}
+
+
+header img{
+    height: 2.5rem !important;
+    margin: 0.5rem;
+}
+
+.fa-phone-alt{
+    float: left;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    padding: 0.3rem;  
+    color: #ffffff;  
+}
+
+.phones{
+    font-size:1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+@media all and (max-width: 1200px) {
+    .phones-div{
+        display: none;
+    }
+
+}
+
+.facebook{
+    color: #000000;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+#publishing_img{
+    width: 25rem;
+    height: auto;
+}
+
+#map-h{
+    font-family: Montserrat;    
+    height: 10%;  
+}
+
+@media all and (max-width: 1000px) {
+    .contacts{
+        font-size: 1rem;
+    }
+
+    .contacts h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .email-div{
+        display: none;
+    }
+
+    .logo{
+        text-align: center;
+        display: block;
+    }
+}
+
+#email-contacts{
+    float: none;    
+}
+
+
+.email-div p, .email-div a, .email-div .fa-facebook-square{
+    color: #ffffff;
 }
