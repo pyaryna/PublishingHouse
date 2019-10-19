@@ -39,30 +39,33 @@
 }
 
 .detal{
-    background-color: #e3f2fd;
+    background-color: #fff8e1;
     font-family: Montserrat;
     position: relative;
     padding: 0rem;
 }
 
 .service{
-    background-color: #c8e6c9;
     font-family: Montserrat;  
-    width: 8rem;
-    height: 3rem;
-    color: #555555;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.service:hover{
+    color:#ff5050;
 }
 
 @media all and (max-width: 800px) {
-    .service{
-        width: 8rem;
-        height: 3rem;
+    .carousel-caption{
+        bottom: 0rem !important;
+        padding-bottom: 0.5rem !important;
     }
 }
 
 .fa-envelope{
     padding: 0.2rem;
     float: left;
+    font-weight: 400;
 }
 
 .page-title{
@@ -110,8 +113,6 @@
  }
 
 footer{
-    /*background-color:#ff8a65/* #bcaaa4*/
-
     background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
     padding-top: 20px;
     font-size: 1.3rem;
@@ -173,6 +174,7 @@ footer{
 .fa-facebook-square{
     padding: 0.2rem;
     color: #000000;
+    font-weight: 400;
 }
 
 
@@ -195,10 +197,8 @@ footer{
 }
 
 header{
-    /*background-color: #ffebee;*/
-   /* background-color: #ff8f00; */
    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
-
+    height: 5em;
 }
 
 
@@ -220,13 +220,24 @@ header img{
     font-weight: 600;
     color: #ffffff;
 }
+.phones-div{
+    margin-top: 1rem;
+}
+
+
+
 
 
 @media all and (max-width: 1200px) {
+    .address-div{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
     .phones-div{
         display: none;
     }
-
 }
 
 .facebook{
@@ -270,11 +281,38 @@ header img{
     }
 }
 
+.logo img{
+    margin-top: 1rem;
+}
+
 #email-contacts{
     float: none;    
 }
 
 
-.email-div p, .email-div a, .email-div .fa-facebook-square{
-    color: #ffffff;
+.email-div p, .email-div a, .email-div .fa-facebook-square, .address-div p{
+    color: #ffffff;    
+}
+
+
+.phones-div, .email-div, .address-div{
+    margin-top: 1rem;
+}
+
+.email-div p, .email-div a, .address-div p{
+    font-weight: 600;
+}
+
+.carousel-caption a{
+    color:#ff5050;
+    font-size: 2rem;
+}
+
+
+.fa-map-marker-alt{
+    float: left;
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    padding: 0.4rem;  
+    color: #ffffff;     
 }
