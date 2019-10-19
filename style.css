@@ -189,6 +189,7 @@ footer{
 
 .contacts h2{
     font-weight: 500;
+    font-size: 1.7rem;
 }
 
 .imgs{
@@ -197,7 +198,7 @@ footer{
 }
 
 header{
-   background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
+    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
     height: 5em;
 }
 
