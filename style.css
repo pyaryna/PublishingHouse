@@ -47,18 +47,29 @@
 
 .service{
     font-family: Montserrat;  
-    font-size: 2rem;
     font-weight: 600;
+    color:#ff5050;
+    font-size: 2rem;
 }
 
 .service:hover{
     color:#ff5050;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
     .carousel-caption{
         bottom: 0rem !important;
         padding-bottom: 0.5rem !important;
+    }
+
+    .service{
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .service{
+        font-size: 1rem;
     }
 }
 
@@ -303,12 +314,6 @@ header img{
 .email-div p, .email-div a, .address-div p{
     font-weight: 600;
 }
-
-.carousel-caption a{
-    color:#ff5050;
-    font-size: 2rem;
-}
-
 
 .fa-map-marker-alt{
     float: left;
