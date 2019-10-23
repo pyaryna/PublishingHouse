@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Montserrat+Alternates:400,600,700|Montserrat:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700|Montserrat+Alternates:400,500,600,700|Montserrat:400,700&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+
+/*general*/
 
 .navigation{
     background-color:#fff3e0;
@@ -38,16 +40,105 @@
     text-align: center;
 }
 
-.detal{
-    background-color: #fff8e1;
-    font-family: Montserrat;
-    position: relative;
-    padding: 0rem;
+.logo img{
+    margin-top: 1rem;
 }
+
+header{
+    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
+    height: 5em;
+}
+
+header img{
+    height: 2.5rem !important;
+    margin: 0.5rem;
+}
+
+@media all and (max-width: 600px) {
+    .email-div{
+        display: none;
+    }
+
+    .logo{
+        text-align: center;
+        display: block;
+    }
+}
+
+.fa-envelope{
+    padding: 0.2rem;
+    float: left;
+    font-weight: 400;
+}
+
+.fa-phone-alt{
+    float: left;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    padding: 0.3rem;  
+    color: #ffffff;  
+}
+
+.phones{
+    font-size:1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+.phones-div{
+    margin-top: 1rem;
+}
+
+@media all and (max-width: 1200px) {
+    .address-div{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .phones-div{
+        display: none;
+    }
+}
+
+.email-div p, .email-div a, .email-div .fa-facebook-square, .address-div p{
+    color: #ffffff;    
+}
+
+
+.phones-div, .email-div, .address-div{
+    margin-top: 1rem;
+}
+
+.email-div p, .email-div a, .address-div p{
+    font-weight: 600;
+}
+
+.fa-map-marker-alt{
+    float: left;
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    padding: 0.4rem;  
+    color: #ffffff;     
+}
+
+footer{
+    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-family: MontserratAlternates;
+    font-weight: 500; 
+    color:#ffffff;
+}
+
+
+
+
+
+/*main*/
 
 .service{
     font-family: Montserrat;  
-    font-weight: 600;
+    font-weight: 400;
     color:#ff5050;
     font-size: 2rem;
 }
@@ -73,18 +164,28 @@
     }
 }
 
-.fa-envelope{
-    padding: 0.2rem;
-    float: left;
-    font-weight: 400;
+.carousel-indicators li {
+    border: 0.2rem solid #fff59d;
+    border-radius: 10px;
+  }
+  
+.carousel-indicators .active {
+    border: 0.2rem solid #0000ff;
+ }
+
+#publishing-title, #design-title{
+    text-align: center;
 }
 
-.page-title{
-    background-color: #fafafa;
-}
+ 
 
-.page-title h1{
-    font-family: Philosopher;      
+/*index*/
+
+.detal{
+    background-color: #fff8e1;
+    font-family: Montserrat;
+    position: relative;
+    padding: 0rem;
 }
 
 .card{
@@ -101,7 +202,7 @@
 
 @media all and (min-width: 600px) and (max-width: 1200px) {
     .card-title{
-        height: 8rem;
+        height: 9rem;
     }
 }
 
@@ -109,42 +210,39 @@
     float: left;
 }
 
+@media all and (max-width: 500px){
+    .modal-body img{
+        float: none;
+    }
+}
+
+@media all and (min-width: 750px) and (max-width: 1000px) {
+    .detal{
+        font-size:0.85rem !important;
+    }
+}
+
 .modal-title{
     font-family: MontserratAlternates;
     font-size: 1.6rem;
 }
 
-.carousel-indicators li {
-    border: 0.2rem solid #fff59d;
-    border-radius: 10px;
-  }
-  
-.carousel-indicators .active {
-    border: 0.2rem solid #0000ff;
- }
+.literature{
+    text-align: left;
+    margin-top: 2rem;
+    font-family: Philosopher;
+    font-weight: 500;
+}
 
-footer{
-    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
-    padding-top: 20px;
-    font-size: 1.3rem;
-    font-family: MontserratAlternates;
-    font-weight: 500; 
-    color:#ffffff;
+.study{
+    margin-top: 5rem;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+/*info*/
 
 .info p{
     text-indent: 2rem;
@@ -166,7 +264,6 @@ footer{
     font-size: 1.4rem;
 }
 
-
 .fa-palette{
     color: #ff5050;
     font-size: 0.8rem;
@@ -182,13 +279,33 @@ footer{
     font-size: 0.8rem;
 }
 
-.fa-facebook-square{
-    padding: 0.2rem;
-    color: #000000;
-    font-weight: 400;
+.imgs{
+    float: right;
+    margin-left: 1rem;
+}
+
+@media all and (max-width: 500px){
+    .imgs{
+        float: none;       
+    }
 }
 
 
+
+
+
+/*publishing*/
+
+#publishing_img{
+    width: 25rem;
+    height: auto;
+}
+
+
+
+
+
+/*contacts*/
 
 .contacts{
     background-color: #fff3e0;
@@ -203,53 +320,10 @@ footer{
     font-size: 1.7rem;
 }
 
-.imgs{
-    float: right;
-    margin-left: 1rem;
-}
-
-header{
-    background: linear-gradient(to right, #ffcc66 0%, #ff5050 80%);
-    height: 5em;
-}
-
-
-header img{
-    height: 2.5rem !important;
-    margin: 0.5rem;
-}
-
-.fa-phone-alt{
-    float: left;
-    font-size: 1rem;
-    margin-top: 0.7rem;
-    padding: 0.3rem;  
-    color: #ffffff;  
-}
-
-.phones{
-    font-size:1rem;
-    font-weight: 600;
-    color: #ffffff;
-}
-.phones-div{
-    margin-top: 1rem;
-}
-
-
-
-
-
-@media all and (max-width: 1200px) {
-    .address-div{
-        display: none;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .phones-div{
-        display: none;
-    }
+.fa-facebook-square{
+    padding: 0.2rem;
+    color: #000000;
+    font-weight: 400;
 }
 
 .facebook{
@@ -260,11 +334,6 @@ header img{
     width: 100%;
     height: 100%;
     border:0;
-}
-
-#publishing_img{
-    width: 25rem;
-    height: auto;
 }
 
 #map-h{
@@ -282,43 +351,6 @@ header img{
     }
 }
 
-@media all and (max-width: 600px) {
-    .email-div{
-        display: none;
-    }
-
-    .logo{
-        text-align: center;
-        display: block;
-    }
-}
-
-.logo img{
-    margin-top: 1rem;
-}
-
 #email-contacts{
     float: none;    
-}
-
-
-.email-div p, .email-div a, .email-div .fa-facebook-square, .address-div p{
-    color: #ffffff;    
-}
-
-
-.phones-div, .email-div, .address-div{
-    margin-top: 1rem;
-}
-
-.email-div p, .email-div a, .address-div p{
-    font-weight: 600;
-}
-
-.fa-map-marker-alt{
-    float: left;
-    font-size: 1.5rem;
-    margin-top: 0.6rem;
-    padding: 0.4rem;  
-    color: #ffffff;     
 }
