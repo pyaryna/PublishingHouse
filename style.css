@@ -174,7 +174,10 @@ footer{
  }
 
 #publishing-title, #design-title{
-    text-align: center;
+    text-align: left;
+    margin-top: 3rem;
+    font-family: Philosopher;
+    font-weight: 500;
 }
 
  
@@ -318,6 +321,7 @@ footer{
 .contacts h2{
     font-weight: 500;
     font-size: 1.7rem;
+    font-family: Philosopher;
 }
 
 .fa-facebook-square{
